@@ -11,8 +11,9 @@ For each municipality it:
 5. writes `<id>-ptillaten.json.deflate`, `<id>-servicedagar.json.deflate` and `<id>-snapshot-meta.json`.
 
 Decisions (user, 2026-11-23): only stretches with a parking rule are shown, and rules without road
-geometry make stays during their hours "Check the sign" (area rules everywhere in the municipality,
-street rules on stretches of that street). That is written as `PF_UNCERTAIN` on each stretch.
+geometry make stays during their hours "Check the sign" (street rules on stretches of that street;
+area rules on the stretches inside the outline the register draws for the decision, or everywhere in
+the municipality when there is none: rdt_outlines.py). That is written as `PF_UNCERTAIN` on each stretch.
 """
 
 import argparse
@@ -41,6 +42,7 @@ rules_mod = load("rdt_rules", "rdt_rules.py")
 probe = load("rdt_probe", "rdt-probe.py")
 nvdb = load("nvdb_probe", "nvdb-probe.py")
 bm = load("build_malmo", "build-malmo.py")
+outlines = load("rdt_outlines", "rdt_outlines.py")
 
 # id → (name, kommunkod, RDT BerörKommunId). Extend as municipalities are added (config/municipalities.json).
 MUNICIPALITIES = {
@@ -304,6 +306,8 @@ def build(kommun_id, pages_dir, enums, cache_path, name=None):
     area_tokens, street_tokens = set(), collections.defaultdict(set)
     stats_unplaced_spots = []
     unplaced_fee = False
+    placed_areas, placed_regulations = [], set()     # [(rings, tokens)] area rules with an outline
+    outline_cache = os.path.join(os.path.dirname(cache_path) or ".", "parkfynd-rdt-outlines.json") if cache_path else None
     for r in unplaced:
         street = street_of(r)
         if street and not r.area:
@@ -311,7 +315,13 @@ def build(kommun_id, pages_dir, enums, cache_path, name=None):
             unplaced_fee |= "FEE" in tokens
             street_tokens[street.lower()] |= tokens
         elif r.area or AREA_TEXT.search(r.text):
-            area_tokens |= uncertain_tokens(r, area=True)
+            tokens = uncertain_tokens(r, area=True)
+            rings = outlines.outline(r.regulation, outline_cache) if tokens else None
+            if rings:
+                placed_areas.append((rings, tokens))
+                placed_regulations.add(r.regulation)
+            else:
+                area_tokens |= tokens
         else:
             stats_unplaced_spots.append(r.regulation)   # a named spot with no street: can't be placed
     pieces = stretches(linked)
@@ -319,11 +329,15 @@ def build(kommun_id, pages_dir, enums, cache_path, name=None):
     ptillaten, servicedagar = [], []
     stats = collections.Counter(rules=len(rules), linked=len(linked), unplaced=len(unplaced))
     for (link, side, a, b), covering in sorted(pieces.items()):
-        described = describe(covering, area_tokens, street_tokens, name, unplaced_fee)
+        line = slice_link(links.get(link, []), a, b)
+        local = set(area_tokens)
+        for rings, tokens in placed_areas:
+            if line and not tokens <= local and outlines.touches(line, rings):
+                local |= tokens
+        described = describe(covering, local, street_tokens, name, unplaced_fee)
         if not described:
             stats["pieces not shown"] += 1
             continue
-        line = slice_link(links.get(link, []), a, b)
         if not line:
             stats["pieces without NVDB geometry"] += 1
             continue
@@ -340,6 +354,7 @@ def build(kommun_id, pages_dir, enums, cache_path, name=None):
         stats["priced as free"] += props["PARKING_RATE"] == "avgiftsfri"
     stats["unplaced spots ignored"] = len(stats_unplaced_spots)
     stats["area tokens"] = ",".join(compact(area_tokens)) or "-"
+    stats["area rules placed by outline"] = len(placed_regulations)
     return ptillaten, servicedagar, stats
 
 
