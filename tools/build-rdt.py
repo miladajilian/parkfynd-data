@@ -141,7 +141,7 @@ def stretches(rules):
         for a, b in zip(cuts, cuts[1:]):
             if b - a < 1e-4:
                 continue
-            covering = [r for s, e, r in spans if s <= a + 1e-9 and e >= b - 1e-9]
+            covering = [r for s, e, r in spans if s <= a + 2e-6 and e >= b - 2e-6]   # cuts are rounded to 6 decimals
             if covering:
                 pieces[(link, side, a, b)] = covering
     return pieces
@@ -295,6 +295,36 @@ def slice_link(pieces, a, b):
     return line if len(line) >= 2 else None
 
 
+# MARK: - Marked spots
+
+def mark_spots(rule, links, maps_cache, stats):
+    """Cuts a permission's road sections to the spots its decision's map marks (rdt_outlines.narrow):
+    "enligt markering på kartbild" often means a few bays on one side, while the register links the
+    whole section, both sides. Sections the map marks nothing on are dropped, unless the map marks
+    nothing on any of them (then it doesn't match the links, and the rule is kept as it was)."""
+    shapes = outlines.map_of(rule.regulation, maps_cache)
+    if not shapes:
+        return
+    narrowed, matched = [], False
+    for link, a, b, side in rule.links:
+        line = slice_link(links.get(link, []), a, b)
+        spots = outlines.narrow(line, shapes) if line else None
+        if spots is None:
+            continue
+        matched = True
+        for f0, f1, spot_side in spots:
+            # The register's own side wins over the map's.
+            narrowed.append((link, a + (b - a) * f0, a + (b - a) * f1, side or spot_side))
+    if not matched:
+        stats["permissions whose map matched no section"] += 1
+        return
+    before = sum((b - a) * (1 if side else 2) for _, a, b, side in rule.links)
+    after = sum((b - a) * (1 if side else 2) for _, a, b, side in narrowed)
+    if after < before - 1e-6:
+        stats["permissions cut to their marked spots"] += 1
+    rule.links = narrowed
+
+
 # MARK: - Build
 
 def build(kommun_id, pages_dir, enums, cache_path, name=None):
@@ -307,7 +337,7 @@ def build(kommun_id, pages_dir, enums, cache_path, name=None):
     stats_unplaced_spots = []
     unplaced_fee = False
     placed_areas, placed_regulations = [], set()     # [(rings, tokens)] area rules with an outline
-    outline_cache = os.path.join(os.path.dirname(cache_path) or ".", "parkfynd-rdt-outlines.json") if cache_path else None
+    maps_cache = os.path.join(os.path.dirname(cache_path) or ".", "parkfynd-rdt-maps.json") if cache_path else None
     for r in unplaced:
         street = street_of(r)
         if street and not r.area:
@@ -316,7 +346,7 @@ def build(kommun_id, pages_dir, enums, cache_path, name=None):
             street_tokens[street.lower()] |= tokens
         elif r.area or AREA_TEXT.search(r.text):
             tokens = uncertain_tokens(r, area=True)
-            rings = outlines.outline(r.regulation, outline_cache) if tokens else None
+            rings = outlines.outline(r.regulation, maps_cache) if tokens else None
             if rings:
                 placed_areas.append((rings, tokens))
                 placed_regulations.add(r.regulation)
@@ -324,10 +354,13 @@ def build(kommun_id, pages_dir, enums, cache_path, name=None):
                 area_tokens |= tokens
         else:
             stats_unplaced_spots.append(r.regulation)   # a named spot with no street: can't be placed
-    pieces = stretches(linked)
-    links = fetch_links({link for link, *_ in pieces}, cache_path)
-    ptillaten, servicedagar = [], []
+    links = fetch_links({link for r in linked for link, *_ in r.links}, cache_path)
     stats = collections.Counter(rules=len(rules), linked=len(linked), unplaced=len(unplaced))
+    for r in linked:
+        if (r.permit or r.fee) and not r.excluded:
+            mark_spots(r, links, maps_cache, stats)
+    pieces = stretches(linked)
+    ptillaten, servicedagar = [], []
     for (link, side, a, b), covering in sorted(pieces.items()):
         line = slice_link(links.get(link, []), a, b)
         local = set(area_tokens)

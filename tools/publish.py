@@ -14,7 +14,7 @@ Each run:
 3. writes `index.json` after every municipality, so a run that is stopped still publishes its work.
 
 A municipality whose new stretch count falls by more than 10 % keeps its previous files (the source
-probably failed); the run logs it. Stockholm is not published here: the app reads the City's API.
+probably failed); the run logs it. That check is skipped once when BUILDER changes. Stockholm is not published here: the app reads the City's API.
 """
 
 import argparse
@@ -51,6 +51,10 @@ INDEX = "index.json"
 # RDT BerörKommunId of municipalities with their own source (Stockholm in the app; Malmö, Göteborg here).
 OWN_SOURCES = {"1": "stockholm", "130": "malmo", "172": "goteborg"}
 TOLERANCE = 0.10
+# Raised when the build itself changes what it shows. A municipality built by an older builder is
+# replaced even if its count drops by more than TOLERANCE, since the drop is the change, not a failure.
+# 2 (2026-11-23): permissions cut to their marked spots; rounding fix that showed hidden stretches.
+BUILDER = 2
 
 
 def now():
@@ -98,11 +102,13 @@ def describe(site, prefix, entry):
 
 def publish(site, prefix, entry, previous, write):
     """Writes to a staging folder, checks the count against the previous build, then moves the files in."""
+    entry["builder"] = BUILDER
     with tempfile.TemporaryDirectory() as staging:
         write(staging)
         describe(staging, prefix, entry)
         old = (previous or {}).get("count")
-        if old and entry["count"] < old * (1 - TOLERANCE):
+        same_builder = (previous or {}).get("builder", 1) == BUILDER
+        if old and same_builder and entry["count"] < old * (1 - TOLERANCE):
             print(f"  {prefix}: {entry['count']} stretches, was {old}: keeping the previous files", flush=True)
             return False
         for name in os.listdir(staging):
