@@ -1,0 +1,106 @@
+{
+ "attempted": {
+  "sollentuna": "2026-11-23T12:04:29Z",
+  "solna": "2026-11-23T12:30:15Z"
+ },
+ "generatedAt": "2026-11-23T13:08:01Z",
+ "municipalities": {
+  "malmo": {
+   "bounds": {
+    "maxLatitude": 55.6288,
+    "maxLongitude": 13.116,
+    "minLatitude": 55.5179,
+    "minLongitude": 12.8838
+   },
+   "center": {
+    "latitude": 55.5944,
+    "longitude": 12.99512
+   },
+   "count": 3397,
+   "fetchedAt": "2026-11-23T12:04:07Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 96278,
+     "sha256": "957a0bf43e20a8b91be76a075a7e54dd6b60ef069bc60ac7772ec89378e40f77"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 57338,
+     "sha256": "20c89a1a4eec12c59c1c46f4e02e1c59772b46507b509b7cf5470824217776cb"
+    },
+    "snapshot-meta.json": {
+     "bytes": 87,
+     "sha256": "2a1579db7742a1f1171b6be77f917d82e4adbb76dbdbbd2c9e0dc7cdad245dc8"
+    }
+   },
+   "id": "malmo",
+   "kommunkod": "1280",
+   "name": "Malmö",
+   "source": "malmo"
+  },
+  "sollentuna": {
+   "bounds": {
+    "maxLatitude": 59.4922,
+    "maxLongitude": 18.0019,
+    "minLatitude": 59.407,
+    "minLongitude": 17.8801
+   },
+   "center": {
+    "latitude": 59.44533,
+    "longitude": 17.94867
+   },
+   "count": 80,
+   "fetchedAt": "2026-11-23T12:04:29Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 4000,
+     "sha256": "e2400b6e665ce08340719309eaae5f89439dc6af6a6f31280556ac38090ca951"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 2142,
+     "sha256": "a0e35b5f917e276eb289c83085d4d0f616d58453c4747b40084ca76b5bcf11c7"
+    },
+    "snapshot-meta.json": {
+     "bytes": 83,
+     "sha256": "e0744abaf79d7b1bf1f7694a064270f28ced509f37f39fedddff27c70094082f"
+    }
+   },
+   "id": "sollentuna",
+   "kommunkod": "0163",
+   "name": "Sollentuna",
+   "source": "rdt"
+  },
+  "solna": {
+   "bounds": {
+    "maxLatitude": 59.3956,
+    "maxLongitude": 18.0702,
+    "minLatitude": 59.3311,
+    "minLongitude": 17.9578
+   },
+   "center": {
+    "latitude": 59.36542,
+    "longitude": 18.00096
+   },
+   "count": 231,
+   "fetchedAt": "2026-11-23T12:30:15Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 11443,
+     "sha256": "ffcaede145254a306e2d8124147a9c03cee68d8051f86eb309a68953a791cfd1"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 8461,
+     "sha256": "c851c5b75f3eca00201f113aeb90fcd8495529afec94583df99ae60694cd5267"
+    },
+    "snapshot-meta.json": {
+     "bytes": 85,
+     "sha256": "fe01d79855620a1658b3a293dc18ca55384b41f1b38f5bf0685eb75ce59737e6"
+    }
+   },
+   "id": "solna",
+   "kommunkod": "0184",
+   "name": "Solna",
+   "source": "rdt"
+  }
+ },
+ "version": 1
+}
