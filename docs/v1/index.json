@@ -1,9 +1,9 @@
 {
  "attempted": {
-  "sollentuna": "2026-11-23T13:43:27Z",
-  "solna": "2026-11-23T12:30:15Z"
+  "sollentuna": "2026-11-23T15:32:26Z",
+  "solna": "2026-11-23T14:33:27Z"
  },
- "generatedAt": "2026-11-23T14:21:44Z",
+ "generatedAt": "2026-11-23T16:04:57Z",
  "municipalities": {
   "malmo": {
    "bounds": {
@@ -12,12 +12,13 @@
     "minLatitude": 55.5179,
     "minLongitude": 12.8838
    },
+   "builder": 2,
    "center": {
     "latitude": 55.5944,
     "longitude": 12.99512
    },
    "count": 3397,
-   "fetchedAt": "2026-11-23T13:43:00Z",
+   "fetchedAt": "2026-11-23T14:32:58Z",
    "files": {
     "ptillaten.json.deflate": {
      "bytes": 96278,
@@ -29,7 +30,7 @@
     },
     "snapshot-meta.json": {
      "bytes": 87,
-     "sha256": "bf8507d60a63403d4aa84e94449f61cbd4727779b330bcaeb470b3dee9442fbd"
+     "sha256": "9ec733bbad0b5007ddf533eba8a7512cbd6e04edb0ab5a7c5bb67b1baa87533f"
     }
    },
    "id": "malmo",
@@ -39,29 +40,30 @@
   },
   "sollentuna": {
    "bounds": {
-    "maxLatitude": 59.4922,
-    "maxLongitude": 18.0019,
-    "minLatitude": 59.407,
+    "maxLatitude": 59.4988,
+    "maxLongitude": 18.0214,
+    "minLatitude": 59.3892,
     "minLongitude": 17.8801
    },
+   "builder": 2,
    "center": {
-    "latitude": 59.44533,
-    "longitude": 17.94867
+    "latitude": 59.44264,
+    "longitude": 17.94772
    },
-   "count": 80,
-   "fetchedAt": "2026-11-23T13:43:27Z",
+   "count": 148,
+   "fetchedAt": "2026-11-23T15:32:26Z",
    "files": {
     "ptillaten.json.deflate": {
-     "bytes": 4003,
-     "sha256": "483d573ae54af05232e1999766bb508f2c95fa582f879dac21bb1d74ff6dee15"
+     "bytes": 7888,
+     "sha256": "d7e979965d74d8766522df70cb477ed59403f857e98170e119a1dfa918e623f9"
     },
     "servicedagar.json.deflate": {
-     "bytes": 2142,
-     "sha256": "a0e35b5f917e276eb289c83085d4d0f616d58453c4747b40084ca76b5bcf11c7"
+     "bytes": 4568,
+     "sha256": "7608f28aad4e255e7abe94b584d3f9fa13bc89c247b24eb386fcd55f6cd994dd"
     },
     "snapshot-meta.json": {
-     "bytes": 83,
-     "sha256": "b0aafb34826fac61cea3e4073fd9d795701d5db1ea987b2183b45b9bd42de285"
+     "bytes": 85,
+     "sha256": "3f0f5c19cd6ab30feedc7664518de0d4f08347a7026c78c52d29c9bc8b9c0dd3"
     }
    },
    "id": "sollentuna",
@@ -71,29 +73,30 @@
   },
   "solna": {
    "bounds": {
-    "maxLatitude": 59.3956,
-    "maxLongitude": 18.0702,
+    "maxLatitude": 59.3965,
+    "maxLongitude": 18.0705,
     "minLatitude": 59.3311,
-    "minLongitude": 17.9578
+    "minLongitude": 17.9574
    },
+   "builder": 2,
    "center": {
-    "latitude": 59.36542,
-    "longitude": 18.00096
+    "latitude": 59.367,
+    "longitude": 18.00031
    },
-   "count": 231,
-   "fetchedAt": "2026-11-23T12:30:15Z",
+   "count": 551,
+   "fetchedAt": "2026-11-23T14:33:27Z",
    "files": {
     "ptillaten.json.deflate": {
-     "bytes": 11443,
-     "sha256": "ffcaede145254a306e2d8124147a9c03cee68d8051f86eb309a68953a791cfd1"
+     "bytes": 27035,
+     "sha256": "90ba6638aca118c488067d65b89ae8bdbb406e95431e0e2f2254c048a6f5754d"
     },
     "servicedagar.json.deflate": {
-     "bytes": 8461,
-     "sha256": "c851c5b75f3eca00201f113aeb90fcd8495529afec94583df99ae60694cd5267"
+     "bytes": 21438,
+     "sha256": "247c563a2a8a06b4b37e803cc1f6685a57e47560ae1c1693d649f1017239b3e4"
     },
     "snapshot-meta.json": {
      "bytes": 85,
-     "sha256": "fe01d79855620a1658b3a293dc18ca55384b41f1b38f5bf0685eb75ce59737e6"
+     "sha256": "389aeb5efe3411c37d1df8e0ced5f7d0b302eb0e2fc6326263b333284d81e08a"
     }
    },
    "id": "solna",
