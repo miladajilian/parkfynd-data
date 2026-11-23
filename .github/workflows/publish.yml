@@ -1,0 +1,47 @@
+# Nightly refresh of the files the Parkfynd app downloads (national-data-spec.md §11).
+# Pages serves docs/ from main: https://<owner>.github.io/parkfynd-data/v1/index.json
+name: Publish parking data
+
+on:
+  schedule:
+    - cron: "0 1 * * *"          # 01:00 UTC every night
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "RDT municipality ids to build, space separated (empty = stalest first)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build
+        env:
+          TRAFIKVERKET_API_KEY: ${{ secrets.TRAFIKVERKET_API_KEY }}
+          GOTEBORG_APPID: ${{ secrets.GOTEBORG_APPID }}
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          args=""
+          for id in $ONLY; do args="$args --only $id"; done
+          python3 -I tools/publish.py docs/v1 --budget-minutes 320 $args
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git commit -m "Data $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
