@@ -1,10 +1,121 @@
 {
  "attempted": {
+  "gotland": "2026-11-24T12:20:00Z",
+  "karlshamn": "2026-11-24T14:47:16Z",
+  "karlskrona": "2026-11-24T13:19:42Z",
+  "olofstrom": "2026-11-24T13:07:19Z",
+  "oskarshamn": "2026-11-24T11:08:53Z",
+  "ragunda": "2026-11-24T15:30:12Z",
+  "sala": "2026-11-24T10:46:31Z",
   "sollentuna": "2026-11-23T15:32:26Z",
-  "solna": "2026-11-23T14:33:27Z"
+  "solna": "2026-11-23T14:33:27Z",
+  "solvesborg": "2026-11-24T15:15:48Z",
+  "staffanstorp": "2026-11-24T15:52:55Z",
+  "svalov": "2026-11-24T15:36:18Z",
+  "vastervik": "2026-11-24T11:26:59Z",
+  "vimmerby": "2026-11-24T11:59:28Z"
  },
- "generatedAt": "2026-11-23T16:04:57Z",
+ "generatedAt": "2026-11-24T16:08:11Z",
  "municipalities": {
+  "gotland": {
+   "bounds": {
+    "maxLatitude": 57.741,
+    "maxLongitude": 18.8252,
+    "minLatitude": 57.2142,
+    "minLongitude": 18.1277
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 57.57925,
+    "longitude": 18.34768
+   },
+   "count": 69,
+   "fetchedAt": "2026-11-24T12:20:00Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 4170,
+     "sha256": "c514ff540c307b75bf3958dd721e4a5fc539a104c180f0434a9f887b463aef59"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "a1957a57dc488569c2b9d993a252bc9af3051af3d2eba2ab7e74124fc56a8615"
+    }
+   },
+   "id": "gotland",
+   "kommunkod": "0980",
+   "name": "Gotland",
+   "source": "rdt"
+  },
+  "karlshamn": {
+   "bounds": {
+    "maxLatitude": 56.2756,
+    "maxLongitude": 14.905,
+    "minLatitude": 56.147,
+    "minLongitude": 14.7244
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.19856,
+    "longitude": 14.83687
+   },
+   "count": 60,
+   "fetchedAt": "2026-11-24T14:47:16Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 3289,
+     "sha256": "2f9802b74d861c4e1836f5e110329f74a83a3acf6a5759945c63261f46d4aabe"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 576,
+     "sha256": "dc5004213bde39498850b8464866dd26812402004f1a55f7da3bbd9562d5fa80"
+    },
+    "snapshot-meta.json": {
+     "bytes": 83,
+     "sha256": "e66aadc205b8c5cabf4cf4ed3926058e499912bc0bb06528ac3dd7729043a6bb"
+    }
+   },
+   "id": "karlshamn",
+   "kommunkod": "1082",
+   "name": "Karlshamn",
+   "source": "rdt"
+  },
+  "karlskrona": {
+   "bounds": {
+    "maxLatitude": 56.238,
+    "maxLongitude": 15.6815,
+    "minLatitude": 56.1474,
+    "minLongitude": 15.5423
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.16665,
+    "longitude": 15.59074
+   },
+   "count": 446,
+   "fetchedAt": "2026-11-24T13:19:42Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 19571,
+     "sha256": "b4ac07dd5c2fe903e2ea6221936291caff7288e5bd19e98b4f2a1418c53c0e8e"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 960,
+     "sha256": "e3b49336da4a3e95aa1d4d1064e52e45b9040cfcbfcc717ed3e6257e5176906e"
+    },
+    "snapshot-meta.json": {
+     "bytes": 84,
+     "sha256": "401b08d55e4a6172aef50ad3e7280987796bab9e340e5c30dc7005ca477ee5d8"
+    }
+   },
+   "id": "karlskrona",
+   "kommunkod": "1080",
+   "name": "Karlskrona",
+   "source": "rdt"
+  },
   "malmo": {
    "bounds": {
     "maxLatitude": 55.6288,
@@ -18,7 +129,7 @@
     "longitude": 12.99512
    },
    "count": 3397,
-   "fetchedAt": "2026-11-23T14:32:58Z",
+   "fetchedAt": "2026-11-24T10:45:54Z",
    "files": {
     "ptillaten.json.deflate": {
      "bytes": 96278,
@@ -30,13 +141,112 @@
     },
     "snapshot-meta.json": {
      "bytes": 87,
-     "sha256": "9ec733bbad0b5007ddf533eba8a7512cbd6e04edb0ab5a7c5bb67b1baa87533f"
+     "sha256": "c37e55473a89399fcd9f788cdcacb8d3db19087f575acffb24b9995c0a6c5108"
     }
    },
    "id": "malmo",
    "kommunkod": "1280",
    "name": "Malmö",
    "source": "malmo"
+  },
+  "olofstrom": {
+   "bounds": {
+    "maxLatitude": 56.2884,
+    "maxLongitude": 14.5516,
+    "minLatitude": 56.2299,
+    "minLongitude": 14.5038
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.25586,
+    "longitude": 14.52799
+   },
+   "count": 5,
+   "fetchedAt": "2026-11-24T13:07:19Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 565,
+     "sha256": "cf41a16496d9a0c2f7ff5a32c98454fee5c224d456df780d1fd6456a289d60a5"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 81,
+     "sha256": "a86d12180dee1e5e03b26f69f1daaf57dc901bd6bef11e9747bcab96e1190630"
+    }
+   },
+   "id": "olofstrom",
+   "kommunkod": "1060",
+   "name": "Olofström",
+   "source": "rdt"
+  },
+  "oskarshamn": {
+   "bounds": {
+    "maxLatitude": 57.3818,
+    "maxLongitude": 16.5704,
+    "minLatitude": 57.2446,
+    "minLongitude": 16.3795
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 57.27458,
+    "longitude": 16.45679
+   },
+   "count": 57,
+   "fetchedAt": "2026-11-24T11:08:53Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 3381,
+     "sha256": "82a63e32e7e45f8d0f156d458b0d4022513cfa9fe1b47543eed7446b9f466c31"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "af3720c9bb97110bc05d032e86274e6a75d6fdd9888fcd962b0ad7dea85d6570"
+    }
+   },
+   "id": "oskarshamn",
+   "kommunkod": "0882",
+   "name": "Oskarshamn",
+   "source": "rdt"
+  },
+  "sala": {
+   "bounds": {
+    "maxLatitude": 59.9369,
+    "maxLongitude": 16.6327,
+    "minLatitude": 59.877,
+    "minLongitude": 16.5451
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 59.90859,
+    "longitude": 16.58985
+   },
+   "count": 90,
+   "fetchedAt": "2026-11-24T10:46:31Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 3935,
+     "sha256": "d289b40879e370bb97e7da19678f9e0e511fca75c76f8470ab9193eb9fef536e"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "4d150087b2a5a0ab5697492bc4af91eb2c928e0189193b4c75315c3387f196b9"
+    }
+   },
+   "id": "sala",
+   "kommunkod": "1981",
+   "name": "Sala",
+   "source": "rdt"
   },
   "sollentuna": {
    "bounds": {
@@ -102,6 +312,171 @@
    "id": "solna",
    "kommunkod": "0184",
    "name": "Solna",
+   "source": "rdt"
+  },
+  "solvesborg": {
+   "bounds": {
+    "maxLatitude": 56.0693,
+    "maxLongitude": 14.7101,
+    "minLatitude": 56.0038,
+    "minLongitude": 14.5563
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.05236,
+    "longitude": 14.58825
+   },
+   "count": 39,
+   "fetchedAt": "2026-11-24T15:15:48Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 2214,
+     "sha256": "2ceda9813928b2ae1cfaf5c0f9ebaa44deac34ba28056817796571333a5c9499"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "c88388a0d98613f784239e23f775485e7b964a4933ef828be5ce7671ca3e0635"
+    }
+   },
+   "id": "solvesborg",
+   "kommunkod": "1083",
+   "name": "Sölvesborg",
+   "source": "rdt"
+  },
+  "staffanstorp": {
+   "bounds": {
+    "maxLatitude": 55.684,
+    "maxLongitude": 13.2436,
+    "minLatitude": 55.6204,
+    "minLongitude": 13.1144
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.6458,
+    "longitude": 13.20193
+   },
+   "count": 18,
+   "fetchedAt": "2026-11-24T15:52:55Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1330,
+     "sha256": "a598c38311336628951a05ae85cfcceb4ffe156abd0795d4d45d4cdc2102df81"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 303,
+     "sha256": "3c7ab0bb2f80e06f94ba4879354abaf3a0593abf010c540903cb6bf2618f8597"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "d68ac655ab2d5a035a221a5b9e1c33c5573ec88f57c662e50e732225a0469d35"
+    }
+   },
+   "id": "staffanstorp",
+   "kommunkod": "1230",
+   "name": "Staffanstorp",
+   "source": "rdt"
+  },
+  "svalov": {
+   "bounds": {
+    "maxLatitude": 55.9223,
+    "maxLongitude": 13.1282,
+    "minLatitude": 55.8615,
+    "minLongitude": 12.98
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.89027,
+    "longitude": 13.07292
+   },
+   "count": 3,
+   "fetchedAt": "2026-11-24T15:36:18Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 500,
+     "sha256": "d53cb8699d8e1581f970788da06b86421154851c979259ca864bb232adc9f98d"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 81,
+     "sha256": "ae665a0537e2541ca29fefa7a653548e0642fff41db57830f11e6556b621f60f"
+    }
+   },
+   "id": "svalov",
+   "kommunkod": "1214",
+   "name": "Svalöv",
+   "source": "rdt"
+  },
+  "vastervik": {
+   "bounds": {
+    "maxLatitude": 57.9106,
+    "maxLongitude": 16.7196,
+    "minLatitude": 57.5801,
+    "minLongitude": 16.37
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 57.76599,
+    "longitude": 16.62317
+   },
+   "count": 186,
+   "fetchedAt": "2026-11-24T11:26:59Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 7189,
+     "sha256": "e4a0a8bb46cb3c687b0fa4cf0f79c9d0f80b712e4f66e4bbda2476846d01adbb"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 406,
+     "sha256": "c69e92afc88ea4386e2e2a0bc7e3a6466ccc5bc35d73feccec2da026d7f4aa2c"
+    },
+    "snapshot-meta.json": {
+     "bytes": 84,
+     "sha256": "ca8d9cf71cccc32fd5a34441984a3eb44e27fa9b3a360ccfb838e08fbbcd7be2"
+    }
+   },
+   "id": "vastervik",
+   "kommunkod": "0883",
+   "name": "Västervik",
+   "source": "rdt"
+  },
+  "vimmerby": {
+   "bounds": {
+    "maxLatitude": 57.6849,
+    "maxLongitude": 15.8908,
+    "minLatitude": 57.6547,
+    "minLongitude": 15.8335
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 57.66727,
+    "longitude": 15.8618
+   },
+   "count": 20,
+   "fetchedAt": "2026-11-24T11:59:28Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1345,
+     "sha256": "78d50759e46fa65d864e1043fb770dcada90c0f637cfa9fbde6ba36d71fbbe75"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "a2010a25c5bd11caed346630624f7978aecb9f30580cde3e7ff3022745dd20b3"
+    }
+   },
+   "id": "vimmerby",
+   "kommunkod": "0884",
+   "name": "Vimmerby",
    "source": "rdt"
   }
  },
