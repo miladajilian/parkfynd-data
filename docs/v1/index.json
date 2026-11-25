@@ -1,22 +1,136 @@
 {
  "attempted": {
+  "bjuv": "2026-11-25T11:50:56Z",
+  "borgholm": "2026-11-25T09:41:54Z",
+  "borlange": "2026-11-25T13:24:54Z",
+  "burlov": "2026-11-25T10:23:29Z",
   "gotland": "2026-11-24T12:20:00Z",
+  "hoor": "2026-11-25T14:31:54Z",
+  "horby": "2026-11-25T14:13:55Z",
   "karlshamn": "2026-11-24T14:47:16Z",
   "karlskrona": "2026-11-24T13:19:42Z",
+  "kavlinge": "2026-11-25T12:06:31Z",
+  "lomma": "2026-11-25T12:33:28Z",
   "olofstrom": "2026-11-24T13:07:19Z",
+  "orkelljunga": "2026-11-25T11:38:09Z",
   "oskarshamn": "2026-11-24T11:08:53Z",
+  "ostra-goinge": "2026-11-25T11:24:13Z",
   "ragunda": "2026-11-24T15:30:12Z",
+  "ronneby": "2026-11-25T10:00:29Z",
   "sala": "2026-11-24T10:46:31Z",
+  "skurup": "2026-11-25T13:54:16Z",
   "sollentuna": "2026-11-23T15:32:26Z",
   "solna": "2026-11-23T14:33:27Z",
   "solvesborg": "2026-11-24T15:15:48Z",
   "staffanstorp": "2026-11-24T15:52:55Z",
   "svalov": "2026-11-24T15:36:18Z",
+  "svedala": "2026-11-25T12:53:32Z",
+  "tomelilla": "2026-11-25T14:58:22Z",
   "vastervik": "2026-11-24T11:26:59Z",
+  "vellinge": "2026-11-25T10:46:10Z",
   "vimmerby": "2026-11-24T11:59:28Z"
  },
- "generatedAt": "2026-11-24T16:08:11Z",
+ "generatedAt": "2026-11-25T15:18:13Z",
  "municipalities": {
+  "borgholm": {
+   "bounds": {
+    "maxLatitude": 56.8921,
+    "maxLongitude": 16.7403,
+    "minLatitude": 56.8629,
+    "minLongitude": 16.6312
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.87909,
+    "longitude": 16.6603
+   },
+   "count": 43,
+   "fetchedAt": "2026-11-25T09:41:54Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1751,
+     "sha256": "d6887812ce6692332464fab8b82f03978ef5b318d0c54d741a3ff6adb6de37c8"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 303,
+     "sha256": "7ee4a587c0562b310e859f08c74014bf9ba00cca2e1e7d285e660427c2cba521"
+    },
+    "snapshot-meta.json": {
+     "bytes": 83,
+     "sha256": "5615be8646c7dc6387588ff0efa64b9092ace237f47e6b5cb3d203ffe6323602"
+    }
+   },
+   "id": "borgholm",
+   "kommunkod": "0885",
+   "name": "Borgholm",
+   "source": "rdt"
+  },
+  "borlange": {
+   "bounds": {
+    "maxLatitude": 60.501,
+    "maxLongitude": 15.4665,
+    "minLatitude": 60.4579,
+    "minLongitude": 15.3748
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 60.482,
+    "longitude": 15.41594
+   },
+   "count": 19,
+   "fetchedAt": "2026-11-25T13:24:54Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1241,
+     "sha256": "f182adc476991962c513a36682970b3b52c41c0b93cb9ac1b3627127d1383b43"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "0996a16686fe494569f8d1ed473581f7859221521742cffdb87cdc790e2714e7"
+    }
+   },
+   "id": "borlange",
+   "kommunkod": "2081",
+   "name": "Borlänge",
+   "source": "rdt"
+  },
+  "burlov": {
+   "bounds": {
+    "maxLatitude": 55.6479,
+    "maxLongitude": 13.1189,
+    "minLatitude": 55.62,
+    "minLongitude": 13.0397
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.63384,
+    "longitude": 13.07108
+   },
+   "count": 29,
+   "fetchedAt": "2026-11-25T10:23:29Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1565,
+     "sha256": "c3a71281d9179cf3980c37c5dc8fed6985b045d7a4e277d909e66336abdc648b"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "b4e0afa46a07f59c8768667b0eecc3424913b1801786bd614a9ddd4f5faf28e6"
+    }
+   },
+   "id": "burlov",
+   "kommunkod": "1231",
+   "name": "Burlöv",
+   "source": "rdt"
+  },
   "gotland": {
    "bounds": {
     "maxLatitude": 57.741,
@@ -48,6 +162,72 @@
    "id": "gotland",
    "kommunkod": "0980",
    "name": "Gotland",
+   "source": "rdt"
+  },
+  "hoor": {
+   "bounds": {
+    "maxLatitude": 56.0059,
+    "maxLongitude": 13.6512,
+    "minLatitude": 55.897,
+    "minLongitude": 13.5174
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.93442,
+    "longitude": 13.54511
+   },
+   "count": 69,
+   "fetchedAt": "2026-11-25T14:31:54Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 3748,
+     "sha256": "a4f579bb7d75f23d3309fa95f2898a2152ac0bc9b66e823ee085b2fdae6a3913"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "2990949bbc9dad3ef73a3c6c0db7b8ccdc4e2be4e30d2cd4a5e51ffd02e97c61"
+    }
+   },
+   "id": "hoor",
+   "kommunkod": "1267",
+   "name": "Höör",
+   "source": "rdt"
+  },
+  "horby": {
+   "bounds": {
+    "maxLatitude": 55.8682,
+    "maxLongitude": 13.6934,
+    "minLatitude": 55.8393,
+    "minLongitude": 13.6386
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.8521,
+    "longitude": 13.66282
+   },
+   "count": 26,
+   "fetchedAt": "2026-11-25T14:13:55Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1448,
+     "sha256": "b0ed6525ca69f102899e74ba1c7b5d5fb4872700c563a5927dfcd3debf5ab3ab"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "5226e75dc3b8542755203da764fd6e88f5b5a8590ce0dda3b4240c6e2e4af709"
+    }
+   },
+   "id": "horby",
+   "kommunkod": "1266",
+   "name": "Hörby",
    "source": "rdt"
   },
   "karlshamn": {
@@ -116,6 +296,72 @@
    "name": "Karlskrona",
    "source": "rdt"
   },
+  "kavlinge": {
+   "bounds": {
+    "maxLatitude": 55.8172,
+    "maxLongitude": 13.1372,
+    "minLatitude": 55.7642,
+    "minLongitude": 12.9539
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.79223,
+    "longitude": 13.09438
+   },
+   "count": 31,
+   "fetchedAt": "2026-11-25T12:06:31Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1748,
+     "sha256": "6dddf7ac7b53bfbf39cad328f5c863132e044025e62b609cd92bfb229886ff95"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "3660052ee854b1c931426a70863b57c26a7a84fb0551a8e166f8249a4f7d9e28"
+    }
+   },
+   "id": "kavlinge",
+   "kommunkod": "1261",
+   "name": "Kävlinge",
+   "source": "rdt"
+  },
+  "lomma": {
+   "bounds": {
+    "maxLatitude": 55.7337,
+    "maxLongitude": 13.101,
+    "minLatitude": 55.6549,
+    "minLongitude": 13.0016
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.67494,
+    "longitude": 13.06875
+   },
+   "count": 53,
+   "fetchedAt": "2026-11-25T12:33:28Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1996,
+     "sha256": "36c7f9703ee321d0c01fbffbcfad30fc70bebde8c4d1cd1679dc67da19e06f48"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "b8636d5338797bb38fbadcab7e169b098340a76af291562530d386b9774e9173"
+    }
+   },
+   "id": "lomma",
+   "kommunkod": "1262",
+   "name": "Lomma",
+   "source": "rdt"
+  },
   "malmo": {
    "bounds": {
     "maxLatitude": 55.6288,
@@ -129,7 +375,7 @@
     "longitude": 12.99512
    },
    "count": 3397,
-   "fetchedAt": "2026-11-24T10:45:54Z",
+   "fetchedAt": "2026-11-25T09:41:21Z",
    "files": {
     "ptillaten.json.deflate": {
      "bytes": 96278,
@@ -141,7 +387,7 @@
     },
     "snapshot-meta.json": {
      "bytes": 87,
-     "sha256": "c37e55473a89399fcd9f788cdcacb8d3db19087f575acffb24b9995c0a6c5108"
+     "sha256": "52192778d25c1b1f136a4ec67906a4e10bdd2243f8c0c4c1500c90c41e743abd"
     }
    },
    "id": "malmo",
@@ -182,6 +428,39 @@
    "name": "Olofström",
    "source": "rdt"
   },
+  "orkelljunga": {
+   "bounds": {
+    "maxLatitude": 56.2926,
+    "maxLongitude": 13.2976,
+    "minLatitude": 56.2723,
+    "minLongitude": 13.2576
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.28246,
+    "longitude": 13.2776
+   },
+   "count": 1,
+   "fetchedAt": "2026-11-25T11:38:09Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 391,
+     "sha256": "b999b0da6e50fcd7d778b65f2d208359f0a868228f5064a377863db062ee3fc5"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 81,
+     "sha256": "0d2c0f415c5a0803763f0a0a2be5c02e160e1a37de26a29396b311f0f7635ecf"
+    }
+   },
+   "id": "orkelljunga",
+   "kommunkod": "1257",
+   "name": "Örkelljunga",
+   "source": "rdt"
+  },
   "oskarshamn": {
    "bounds": {
     "maxLatitude": 57.3818,
@@ -215,6 +494,72 @@
    "name": "Oskarshamn",
    "source": "rdt"
   },
+  "ostra-goinge": {
+   "bounds": {
+    "maxLatitude": 56.3161,
+    "maxLongitude": 14.2185,
+    "minLatitude": 56.1473,
+    "minLongitude": 14.0528
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.23708,
+    "longitude": 14.08967
+   },
+   "count": 42,
+   "fetchedAt": "2026-11-25T11:24:13Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 2135,
+     "sha256": "34f34d5367a5111180533973cad38d6018de1286e13b3ef11083d3e167061ae1"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "8e63959b664d520eca4e649042804c9553b7dcd2a563917b0f539b0d720567db"
+    }
+   },
+   "id": "ostra-goinge",
+   "kommunkod": "1256",
+   "name": "Östra Göinge",
+   "source": "rdt"
+  },
+  "ronneby": {
+   "bounds": {
+    "maxLatitude": 56.2674,
+    "maxLongitude": 15.3185,
+    "minLatitude": 56.1599,
+    "minLongitude": 15.0956
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.21614,
+    "longitude": 15.27081
+   },
+   "count": 69,
+   "fetchedAt": "2026-11-25T10:00:29Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 3516,
+     "sha256": "83481998308365656532c0fbf916429c387461128ddb92e78bc5c20455e1cb71"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "7b74bf2d8070c49df2489c33034dbefffa6afedcfb849c93b63544d28914d858"
+    }
+   },
+   "id": "ronneby",
+   "kommunkod": "1081",
+   "name": "Ronneby",
+   "source": "rdt"
+  },
   "sala": {
    "bounds": {
     "maxLatitude": 59.9369,
@@ -246,6 +591,39 @@
    "id": "sala",
    "kommunkod": "1981",
    "name": "Sala",
+   "source": "rdt"
+  },
+  "skurup": {
+   "bounds": {
+    "maxLatitude": 55.4933,
+    "maxLongitude": 13.5242,
+    "minLatitude": 55.4679,
+    "minLongitude": 13.4734
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.48,
+    "longitude": 13.49987
+   },
+   "count": 40,
+   "fetchedAt": "2026-11-25T13:54:16Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 2026,
+     "sha256": "a6bc5423a4f0aae8424d3d50aca6705318f8db4904802bb303866043816457d8"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "14b58df9a49ce41e0e7804549f0f9cb02fe9eb1d9466bb27b8bdfcc31c62e59d"
+    }
+   },
+   "id": "skurup",
+   "kommunkod": "1264",
+   "name": "Skurup",
    "source": "rdt"
   },
   "sollentuna": {
@@ -413,6 +791,72 @@
    "name": "Svalöv",
    "source": "rdt"
   },
+  "svedala": {
+   "bounds": {
+    "maxLatitude": 55.6085,
+    "maxLongitude": 13.281,
+    "minLatitude": 55.4917,
+    "minLongitude": 13.1542
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.52052,
+    "longitude": 13.22989
+   },
+   "count": 76,
+   "fetchedAt": "2026-11-25T12:53:32Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 3811,
+     "sha256": "1762498ccb95b9f13f6e13d2242b03a93cb188435fc636bc9bb2857e21b27064"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 327,
+     "sha256": "03be2eff1b2d9ffe9afa7ebbb00d3fa89dc9f27cff7308af552de8e9b54d0ba3"
+    },
+    "snapshot-meta.json": {
+     "bytes": 83,
+     "sha256": "10787e4ea948fff0c944019fc905ee3df16f92b65417183e5c69257f29a49d72"
+    }
+   },
+   "id": "svedala",
+   "kommunkod": "1263",
+   "name": "Svedala",
+   "source": "rdt"
+  },
+  "tomelilla": {
+   "bounds": {
+    "maxLatitude": 55.5562,
+    "maxLongitude": 13.9718,
+    "minLatitude": 55.533,
+    "minLongitude": 13.9281
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.5448,
+    "longitude": 13.95037
+   },
+   "count": 5,
+   "fetchedAt": "2026-11-25T14:58:22Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 700,
+     "sha256": "00e0bd2d1107b9376511cce05e32aab2ab8e6db01fae5853d3db2adc96fa9b5b"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 81,
+     "sha256": "969fded52cb79a5391aa06da668101c439cc7f512b54d663018199d701380fe9"
+    }
+   },
+   "id": "tomelilla",
+   "kommunkod": "1270",
+   "name": "Tomelilla",
+   "source": "rdt"
+  },
   "vastervik": {
    "bounds": {
     "maxLatitude": 57.9106,
@@ -444,6 +888,39 @@
    "id": "vastervik",
    "kommunkod": "0883",
    "name": "Västervik",
+   "source": "rdt"
+  },
+  "vellinge": {
+   "bounds": {
+    "maxLatitude": 55.4813,
+    "maxLongitude": 13.0492,
+    "minLatitude": 55.4006,
+    "minLongitude": 12.8306
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.43407,
+    "longitude": 12.949
+   },
+   "count": 16,
+   "fetchedAt": "2026-11-25T10:46:10Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1086,
+     "sha256": "8ec9cd6d60bef6f7d8ab12321b17117ada7b4915df16cfc9126d6100577fcb5d"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "621741027b527d64a34c8c2ce7a7eb7e2794f81b04f8ec211b9126b6cc3424e0"
+    }
+   },
+   "id": "vellinge",
+   "kommunkod": "1233",
+   "name": "Vellinge",
    "source": "rdt"
   },
   "vimmerby": {
