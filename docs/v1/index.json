@@ -1,23 +1,33 @@
 {
  "attempted": {
+  "astorp": "2026-11-26T10:03:33Z",
+  "bastad": "2026-11-26T10:16:33Z",
   "bjuv": "2026-11-25T11:50:56Z",
   "borgholm": "2026-11-25T09:41:54Z",
   "borlange": "2026-11-25T13:24:54Z",
+  "bromolla": "2026-11-26T09:32:40Z",
   "burlov": "2026-11-25T10:23:29Z",
   "gotland": "2026-11-24T12:20:00Z",
+  "helsingborg": "2026-11-26T12:16:11Z",
+  "hoganas": "2026-11-26T14:04:31Z",
   "hoor": "2026-11-25T14:31:54Z",
   "horby": "2026-11-25T14:13:55Z",
   "karlshamn": "2026-11-24T14:47:16Z",
   "karlskrona": "2026-11-24T13:19:42Z",
   "kavlinge": "2026-11-25T12:06:31Z",
+  "klippan": "2026-11-26T09:51:38Z",
+  "landskrona": "2026-11-26T11:37:19Z",
   "lomma": "2026-11-25T12:33:28Z",
+  "lund": "2026-11-26T10:36:29Z",
   "olofstrom": "2026-11-24T13:07:19Z",
   "orkelljunga": "2026-11-25T11:38:09Z",
   "oskarshamn": "2026-11-24T11:08:53Z",
   "ostra-goinge": "2026-11-25T11:24:13Z",
+  "perstorp": "2026-11-26T09:44:23Z",
   "ragunda": "2026-11-24T15:30:12Z",
   "ronneby": "2026-11-25T10:00:29Z",
   "sala": "2026-11-24T10:46:31Z",
+  "sjobo": "2026-11-26T09:17:43Z",
   "skurup": "2026-11-25T13:54:16Z",
   "sollentuna": "2026-11-23T15:32:26Z",
   "solna": "2026-11-23T14:33:27Z",
@@ -30,8 +40,74 @@
   "vellinge": "2026-11-25T10:46:10Z",
   "vimmerby": "2026-11-24T11:59:28Z"
  },
- "generatedAt": "2026-11-25T15:18:13Z",
+ "generatedAt": "2026-11-26T14:22:04Z",
  "municipalities": {
+  "astorp": {
+   "bounds": {
+    "maxLatitude": 56.1485,
+    "maxLongitude": 13.0732,
+    "minLatitude": 56.0921,
+    "minLongitude": 12.8456
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.12812,
+    "longitude": 12.9448
+   },
+   "count": 37,
+   "fetchedAt": "2026-11-26T10:03:33Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1925,
+     "sha256": "67de34dc93c0633d2e77d17956cc1f1d3d9d3d8dbfead5acb2095b46b6dc5867"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 291,
+     "sha256": "47bb3fb439c60e460c578019b94609b6a53e8be203b79fe3f21b8244c546a142"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "b90f71026a532ec220b2e3f9bbe955ac4f6be93c59b4e3d0cff4e9c5f8659a71"
+    }
+   },
+   "id": "astorp",
+   "kommunkod": "1277",
+   "name": "Åstorp",
+   "source": "rdt"
+  },
+  "bastad": {
+   "bounds": {
+    "maxLatitude": 56.4505,
+    "maxLongitude": 12.9269,
+    "minLatitude": 56.3397,
+    "minLongitude": 12.6009
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.42772,
+    "longitude": 12.82586
+   },
+   "count": 23,
+   "fetchedAt": "2026-11-26T10:16:33Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1743,
+     "sha256": "3ac08defcc599890356c831b4e07c292a04a2b31965e87d1355e703feb4a0edc"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 324,
+     "sha256": "a3bc06a06b5be74db8805ef05f7a2db93e19239e33743956e6cb9dc15d8ccb29"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "718e149b607081e2cacab22eb515f7d608dcb41dbd280949f2cc730a7e70fb3e"
+    }
+   },
+   "id": "bastad",
+   "kommunkod": "1278",
+   "name": "Båstad",
+   "source": "rdt"
+  },
   "borgholm": {
    "bounds": {
     "maxLatitude": 56.8921,
@@ -98,6 +174,39 @@
    "name": "Borlänge",
    "source": "rdt"
   },
+  "bromolla": {
+   "bounds": {
+    "maxLatitude": 56.0854,
+    "maxLongitude": 14.5073,
+    "minLatitude": 56.0507,
+    "minLongitude": 14.4324
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.0708,
+    "longitude": 14.46964
+   },
+   "count": 35,
+   "fetchedAt": "2026-11-26T09:32:40Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1823,
+     "sha256": "85d17b9b25ef8e2c9601aad90d244194af85f4cc0b66b30acda43345c57451b4"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "a0bdcddb1141028f46d7d3574a155030f05a8ebeb84be87df7ccd666ed7ae431"
+    }
+   },
+   "id": "bromolla",
+   "kommunkod": "1272",
+   "name": "Bromölla",
+   "source": "rdt"
+  },
   "burlov": {
    "bounds": {
     "maxLatitude": 55.6479,
@@ -162,6 +271,72 @@
    "id": "gotland",
    "kommunkod": "0980",
    "name": "Gotland",
+   "source": "rdt"
+  },
+  "helsingborg": {
+   "bounds": {
+    "maxLatitude": 56.1507,
+    "maxLongitude": 12.8984,
+    "minLatitude": 55.9537,
+    "minLongitude": 12.5811
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.04845,
+    "longitude": 12.71441
+   },
+   "count": 914,
+   "fetchedAt": "2026-11-26T12:16:11Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 42597,
+     "sha256": "a001e7f1ce65566d3af47060c359185c1b54afe1f783425958d4d56c8e1d4aef"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 1066,
+     "sha256": "6eb0a512e6268f8c393d722ddc4b141667f2f76131b9392442cc474e407094fe"
+    },
+    "snapshot-meta.json": {
+     "bytes": 84,
+     "sha256": "077cc614cd50d96e6ca0225afe517cff3427e8dbf7b62b084554285d484c3278"
+    }
+   },
+   "id": "helsingborg",
+   "kommunkod": "1283",
+   "name": "Helsingborg",
+   "source": "rdt"
+  },
+  "hoganas": {
+   "bounds": {
+    "maxLatitude": 56.2848,
+    "maxLongitude": 12.5951,
+    "minLatitude": 56.1622,
+    "minLongitude": 12.5303
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.19731,
+    "longitude": 12.55948
+   },
+   "count": 104,
+   "fetchedAt": "2026-11-26T14:04:31Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 3467,
+     "sha256": "b7432a76f9d60c2caf9f24d5b18f0c5d3dc1a0a9959c2d1aabe161755ae94e7b"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 83,
+     "sha256": "7881079650d2e6025b213253269517fd73e703369b5e68c71df3ca4d0a6aaf5f"
+    }
+   },
+   "id": "hoganas",
+   "kommunkod": "1284",
+   "name": "Höganäs",
    "source": "rdt"
   },
   "hoor": {
@@ -329,6 +504,72 @@
    "name": "Kävlinge",
    "source": "rdt"
   },
+  "klippan": {
+   "bounds": {
+    "maxLatitude": 56.1457,
+    "maxLongitude": 13.2524,
+    "minLatitude": 56.0634,
+    "minLongitude": 13.1053
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.12749,
+    "longitude": 13.14444
+   },
+   "count": 7,
+   "fetchedAt": "2026-11-26T09:51:38Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 738,
+     "sha256": "47795fcf33bc7fe1c893b384e7a28451c105f6864a6588402fb532450fca2cfd"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 81,
+     "sha256": "558f32698af3310114b35ca147d608b5c477c60d96b07e612546871e5b72d9bb"
+    }
+   },
+   "id": "klippan",
+   "kommunkod": "1276",
+   "name": "Klippan",
+   "source": "rdt"
+  },
+  "landskrona": {
+   "bounds": {
+    "maxLatitude": 55.9176,
+    "maxLongitude": 12.9758,
+    "minLatitude": 55.846,
+    "minLongitude": 12.7014
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.88169,
+    "longitude": 12.83037
+   },
+   "count": 422,
+   "fetchedAt": "2026-11-26T11:37:19Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 18913,
+     "sha256": "6f435446dbd33cb0d4928f05b5f27de7331d85f1f6fb1d1c0679dd0b5390d7f2"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 12112,
+     "sha256": "e18170d3421c675bae92078e206394b9de22a32c0eadea893e96997f72d01904"
+    },
+    "snapshot-meta.json": {
+     "bytes": 85,
+     "sha256": "0eaacf46e1bb2fde71e6dc058ff0b50621c314b48278b8192bbcd7b0aefa8e15"
+    }
+   },
+   "id": "landskrona",
+   "kommunkod": "1282",
+   "name": "Landskrona",
+   "source": "rdt"
+  },
   "lomma": {
    "bounds": {
     "maxLatitude": 55.7337,
@@ -362,6 +603,39 @@
    "name": "Lomma",
    "source": "rdt"
   },
+  "lund": {
+   "bounds": {
+    "maxLatitude": 55.7404,
+    "maxLongitude": 13.5295,
+    "minLatitude": 55.5877,
+    "minLongitude": 13.141
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.69966,
+    "longitude": 13.23404
+   },
+   "count": 445,
+   "fetchedAt": "2026-11-26T10:36:29Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 15671,
+     "sha256": "e05616f8d44e912391402f66fc24abde8e5b0cc112b342c586ca313275aefcef"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 83,
+     "sha256": "46d3b369fb914a52cc29028c5c4a9f96b2a41d2050e6e894df3ec76f0079a476"
+    }
+   },
+   "id": "lund",
+   "kommunkod": "1281",
+   "name": "Lund",
+   "source": "rdt"
+  },
   "malmo": {
    "bounds": {
     "maxLatitude": 55.6288,
@@ -375,7 +649,7 @@
     "longitude": 12.99512
    },
    "count": 3397,
-   "fetchedAt": "2026-11-25T09:41:21Z",
+   "fetchedAt": "2026-11-26T09:17:19Z",
    "files": {
     "ptillaten.json.deflate": {
      "bytes": 96278,
@@ -387,7 +661,7 @@
     },
     "snapshot-meta.json": {
      "bytes": 87,
-     "sha256": "52192778d25c1b1f136a4ec67906a4e10bdd2243f8c0c4c1500c90c41e743abd"
+     "sha256": "ee4743aa0f440d869ae9e703e9a9c1ca6edb4014046d635987189afffb27dc1c"
     }
    },
    "id": "malmo",
@@ -527,6 +801,39 @@
    "name": "Östra Göinge",
    "source": "rdt"
   },
+  "perstorp": {
+   "bounds": {
+    "maxLatitude": 56.1488,
+    "maxLongitude": 13.4203,
+    "minLatitude": 56.1267,
+    "minLongitude": 13.3738
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 56.13777,
+    "longitude": 13.39589
+   },
+   "count": 28,
+   "fetchedAt": "2026-11-26T09:44:23Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1368,
+     "sha256": "7d2e72eccf64cec8a20104fa46516c9ab190bc8d44fb182d93ff3c82e12fb170"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "89139b00a156b1bcd97895c70eb40d99b09bdea3aa262d06e148f8509a471cc4"
+    }
+   },
+   "id": "perstorp",
+   "kommunkod": "1275",
+   "name": "Perstorp",
+   "source": "rdt"
+  },
   "ronneby": {
    "bounds": {
     "maxLatitude": 56.2674,
@@ -591,6 +898,39 @@
    "id": "sala",
    "kommunkod": "1981",
    "name": "Sala",
+   "source": "rdt"
+  },
+  "sjobo": {
+   "bounds": {
+    "maxLatitude": 55.7162,
+    "maxLongitude": 13.8097,
+    "minLatitude": 55.5782,
+    "minLongitude": 13.6467
+   },
+   "builder": 2,
+   "center": {
+    "latitude": 55.63563,
+    "longitude": 13.71027
+   },
+   "count": 27,
+   "fetchedAt": "2026-11-26T09:17:43Z",
+   "files": {
+    "ptillaten.json.deflate": {
+     "bytes": 1368,
+     "sha256": "aa3f63ba5155407d60e0e6a54898ef7b7da9d1917092c6631664c48277744d83"
+    },
+    "servicedagar.json.deflate": {
+     "bytes": 40,
+     "sha256": "8615e8c3e6ecd42dbc5245526aba1ae04316c9a1b88b918c87f3bdffdbcb9221"
+    },
+    "snapshot-meta.json": {
+     "bytes": 82,
+     "sha256": "c409da7f805d7f7d6ce82a77956147f338f91e8e199f728146a7a238d4868211"
+    }
+   },
+   "id": "sjobo",
+   "kommunkod": "1265",
+   "name": "Sjöbo",
    "source": "rdt"
   },
   "skurup": {
